@@ -37,7 +37,7 @@ RUN echo 'deb http://us.archive.ubuntu.com/ubuntu jammy main multiverse' >> /etc
 # Install python3 packages
 RUN pip3 install setuptools -U && \
     pip3 install "numpy==1.22.2" -U && \
-    pip3 install scipy -U && \
+    pip3 install "scipy==1.13.1" -U && \
     pip3 install watchdog && \
     pip3 install matplotlib -U && \
     pip3 install bilby -U && \
